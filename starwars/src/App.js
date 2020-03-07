@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import './App.css';
 import axios from 'axios';
 import Cards from "./components/Cards"
-import Pages from "./components/Pages"
+
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -36,7 +36,6 @@ const App = () => {
         <Cards charArr = {charArr}/>
       </div>
       <div style ={{display: "flex", justifyContent: "center"}}>
-        <Pages setPage={setPage}/>
       </div>
       
     </div>

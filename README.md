@@ -25,12 +25,13 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
-
+  - React JS is a library that helps construct UIs. It helps solves problems of scalability and complexity when developing for large projects that involve constantly changing data, or "state". React helps to solve difficulties brought about by frequent DOM manipulation due to this data changing.
 - [ ] What does it mean to _think_ in react?
-
+  - React expects a specific way of design. React looks for functions and/or classes to output or "render" elements, which are eventually added to the DOM after being processed by React. Components are made as children/parents in a React component hiarchy, which is determined by the developer based upon their disassembly of a desired UI into reusable sections that have individual purposes. The components' shared data is called "state", and this is stored within the constructor of a Class Component that would be a common parent of all child components in the hiarchy which use said "state" data.
 - [ ] Describe state.
-
+  - State is dynamic data held within a common parent component of all child compenents which use that data. Data that will be involved in the interactivity of an app will live here. The state will be modified with the setState method within methods contained on the state's component. Presentational components will point to these methods from event listeners (onClick, onSubmit, OnChange) on elements that they render.
 - [ ] Describe props.
+  - Props is an object argument used on child components in React to retrieve data that is passed down from parent components. This data could be callback functions, or dynamic data from "state".
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
 
