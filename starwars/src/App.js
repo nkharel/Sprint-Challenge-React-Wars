@@ -14,7 +14,7 @@ const App = () => {
 
 
 
-  const [charArr, setCharArr] = useState();
+  const [charArr, setCharArr] = useState([]);
   const [page, setPage] = useState(1);
 
   useEffect( () => {
@@ -27,6 +27,7 @@ const App = () => {
 
   }, [page]);
 
+  console.log(charArr);
 
 
   return (
